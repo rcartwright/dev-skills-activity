@@ -4,6 +4,28 @@ h1 {
 
 }
 
+.close {
+  font-size: 15px;
+  font-family: "Arial";
+  color: rgb(198, 198, 198);
+  line-height: 1.6;
+  text-align: left;
+  z-index: 7;
+}
+
+.close_surround {
+  margin-bottom:20px;
+}
+
+.Learn_More {
+  font-size: 14px;
+  font-family: "Oxygen";
+  color: rgb(248, 246, 95);
+  line-height: 1.714;
+  text-align: left;
+  z-index: 5;
+}
+
 .bkgrnd_shape {
   background-image: -moz-linear-gradient( 90deg, rgb(53,93,160) 0%, rgb(37,67,117) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(53,93,160) 0%, rgb(37,67,117) 100%);
@@ -16,6 +38,7 @@ h1 {
   width: 282px;
   height: 466px;
   z-index: 3;
+  float:right;
  	}
  	}
  @media only screen and (min-width : 768px) {
@@ -23,6 +46,7 @@ h1 {
   width: 282px;
   height: 466px;
   z-index: 3;	
+  float:right;
  	}
  	 }
  @media only screen and (min-width : 992px) {
@@ -30,15 +54,40 @@ h1 {
   width: 507px;
   height: 296px;
   z-index: 17;
+  float:left;
  	}
  	  }
 
 .image_shape {
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+ @media only screen and (max-width : 768px) {
+ .image_shape {
+  width: 246px;
+  height: 160px;
+  z-index: 10;
+  }
+  }
+ @media only screen and (min-width : 768px) {
+ .image_shape {
+  width: 246px;
+  height: 160px;
+  z-index: 10;
+  }
+   }
+ @media only screen and (min-width : 992px) {
+ .image_shape {
   width: 201px;
   height: 182px;
   z-index: 25;
-  overflow:hidden;
+  }
+}
+
+.surrounding_image_shape {
+  width: 201px;
+  height: 182px;
 }
 
 .L5100_Iphone_Temperature {
@@ -49,17 +98,41 @@ h1 {
   background-size: 100%;
   position: relative;
   bottom: 17%;
-  left: -20%;
+}
+
+ @media only screen and (max-width : 768px) {
+  .L5100_Iphone_Temperature {
+    left: -10%;
+  }
+}
+ @media only screen and (min-width : 768px) {
+  .L5100_Iphone_Temperature {
+    left: -10%;
+  }
+}
+ @media only screen and (min-width : 992px) {
+  .L5100_Iphone_Temperature {
+    left: -20%;
+  }
 }
 
 .shape {
   background-color: rgb(53, 93, 160);
-  position: relative;
+  position: absolute;
+  width: 92px;
+  height: 93px;
+  z-index: 28;
+  position: absolute;
+  left: -20px;
+  bottom: 47px;
 }
 
 .Home_Auto_Icon {
   width: 35px;
   height: 35px;
+  bottom: 32px;
+  position: absolute;
+  left: 27px;
 }
 
 .title {
@@ -97,4 +170,11 @@ h1 {
   -webkit-transform: matrix( 0.99983206905321,0,0,1,0,0);
   -ms-transform: matrix( 0.99983206905321,0,0,1,0,0);
   z-index: 23;
+}
+
+.alert {
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    border: 0px !important;
+    border-radius: 0px !important;
 }
