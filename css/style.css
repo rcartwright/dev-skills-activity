@@ -26,3 +26,49 @@
   z-index: 17;
  	}
  	  }
+
+  .image_shape {
+  background-color: rgb(255, 255, 255);
+  width: 201px;
+  height: 182px;
+  z-index: 25;
+  overflow:hidden;
+}
+
+.L5100_Iphone_Temperature {
+  background-image: url("../images/L5100_Iphone_Temperature.jpg");
+  width: 282px;
+  height: 303px;
+  z-index: 26;
+  background-size: 100%;
+  position: relative;
+  bottom: 17%;
+  left: -20%;
+}
+
+.shape {
+  background-color: rgb(53, 93, 160);
+  position: relative;
+}
+
+ @media only screen and (max-width : 768px) {
+ .shape{
+  width: 92px;
+  height: 93px;
+  z-index: 13;
+}
+  }
+ @media only screen and (min-width : 768px) {
+ .shape{
+  width: 92px;
+  height: 93px;
+  z-index: 13;
+}
+  }
+ @media only screen and (min-width : 992px) {
+ .shape{
+  width: 92px;
+  height: 93px;
+  z-index: 28;
+  }
+}
