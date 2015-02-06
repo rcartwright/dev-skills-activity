@@ -1,3 +1,9 @@
+h1 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+
+}
+
 .bkgrnd_shape {
   background-image: -moz-linear-gradient( 90deg, rgb(53,93,160) 0%, rgb(37,67,117) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(53,93,160) 0%, rgb(37,67,117) 100%);
@@ -27,7 +33,7 @@
  	}
  	  }
 
-  .image_shape {
+.image_shape {
   background-color: rgb(255, 255, 255);
   width: 201px;
   height: 182px;
@@ -51,24 +57,19 @@
   position: relative;
 }
 
- @media only screen and (max-width : 768px) {
- .shape{
-  width: 92px;
-  height: 93px;
-  z-index: 13;
+.title {
+  font-size: 26px;
+  font-family: "Oxygen" sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.154;
+  text-align: left;
+  -moz-transform: matrix( 0.99983206905321,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99983206905321,0,0,1,0,0);
+  -ms-transform: matrix( 0.99983206905321,0,0,1,0,0);
+  z-index: 3;
 }
-  }
- @media only screen and (min-width : 768px) {
- .shape{
-  width: 92px;
-  height: 93px;
-  z-index: 13;
-}
-  }
- @media only screen and (min-width : 992px) {
- .shape{
-  width: 92px;
-  height: 93px;
-  z-index: 28;
-  }
+
+.Home_Auto_Icon {
+  width: 35px;
+  height: 35px;
 }
